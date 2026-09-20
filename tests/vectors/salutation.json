@@ -1,0 +1,492 @@
+[
+  {
+    "name": "plain frau ch",
+    "fn": "salutation",
+    "locale": "de-ch",
+    "input": "Frau Müller",
+    "expected": "Sehr geehrte Frau Müller"
+  },
+  {
+    "name": "plain frau de",
+    "fn": "salutation",
+    "locale": "de",
+    "input": "Frau Müller",
+    "expected": "Sehr geehrte Frau Müller,"
+  },
+  {
+    "name": "plain herr ch",
+    "fn": "salutation",
+    "locale": "de-ch",
+    "input": "Herr Müller",
+    "expected": "Sehr geehrter Herr Müller"
+  },
+  {
+    "name": "plain herr de",
+    "fn": "salutation",
+    "locale": "de",
+    "input": "Herr Müller",
+    "expected": "Sehr geehrter Herr Müller,"
+  },
+  {
+    "name": "doctor ch",
+    "fn": "salutation",
+    "locale": "de-ch",
+    "input": "Frau Dr. Müller",
+    "expected": "Sehr geehrte Frau Dr. Müller"
+  },
+  {
+    "name": "doctor de",
+    "fn": "salutation",
+    "locale": "de",
+    "input": "Frau Dr. Müller",
+    "expected": "Sehr geehrte Frau Dr. Müller,"
+  },
+  {
+    "name": "professor suppresses doctor ch",
+    "fn": "salutation",
+    "locale": "de-ch",
+    "input": "Herr Prof. Dr. Müller",
+    "expected": "Sehr geehrter Herr Professor Müller"
+  },
+  {
+    "name": "professor suppresses doctor de",
+    "fn": "salutation",
+    "locale": "de",
+    "input": "Herr Prof. Dr. Müller",
+    "expected": "Sehr geehrter Herr Professor Müller,"
+  },
+  {
+    "name": "accusative herrn ch",
+    "fn": "salutation",
+    "locale": "de-ch",
+    "input": "Herrn Müller",
+    "expected": "Sehr geehrter Herr Müller"
+  },
+  {
+    "name": "accusative herrn de",
+    "fn": "salutation",
+    "locale": "de",
+    "input": "Herrn Müller",
+    "expected": "Sehr geehrter Herr Müller,"
+  },
+  {
+    "name": "lowercase ch",
+    "fn": "salutation",
+    "locale": "de-ch",
+    "input": "frau müller",
+    "expected": "Sehr geehrte Frau müller"
+  },
+  {
+    "name": "lowercase de",
+    "fn": "salutation",
+    "locale": "de",
+    "input": "frau müller",
+    "expected": "Sehr geehrte Frau müller,"
+  },
+  {
+    "name": "hyphenated surname ch",
+    "fn": "salutation",
+    "locale": "de-ch",
+    "input": "Frau Anne-Marie Müller-Schmidt",
+    "expected": "Sehr geehrte Frau Müller-Schmidt"
+  },
+  {
+    "name": "hyphenated surname de",
+    "fn": "salutation",
+    "locale": "de",
+    "input": "Frau Anne-Marie Müller-Schmidt",
+    "expected": "Sehr geehrte Frau Müller-Schmidt,"
+  },
+  {
+    "name": "liechtenstein renders swiss-style",
+    "fn": "salutation",
+    "locale": "de-li",
+    "input": "Frau Müller",
+    "expected": "Sehr geehrte Frau Müller"
+  },
+  {
+    "name": "austria renders din-style",
+    "fn": "salutation",
+    "locale": "de-at",
+    "input": "Herr Müller",
+    "expected": "Sehr geehrter Herr Müller,"
+  },
+  {
+    "name": "empty falls back ch",
+    "fn": "salutation",
+    "locale": "de-ch",
+    "input": "",
+    "expected": "Sehr geehrte Damen und Herren"
+  },
+  {
+    "name": "empty falls back de",
+    "fn": "salutation",
+    "locale": "de",
+    "input": "",
+    "expected": "Sehr geehrte Damen und Herren,"
+  },
+  {
+    "name": "whitespace falls back ch",
+    "fn": "salutation",
+    "locale": "de-ch",
+    "input": "   ",
+    "expected": "Sehr geehrte Damen und Herren"
+  },
+  {
+    "name": "whitespace falls back de",
+    "fn": "salutation",
+    "locale": "de",
+    "input": "   ",
+    "expected": "Sehr geehrte Damen und Herren,"
+  },
+  {
+    "name": "missing honorific falls back ch",
+    "fn": "salutation",
+    "locale": "de-ch",
+    "input": "Jane Doe",
+    "expected": "Sehr geehrte Damen und Herren"
+  },
+  {
+    "name": "missing honorific falls back de",
+    "fn": "salutation",
+    "locale": "de",
+    "input": "Jane Doe",
+    "expected": "Sehr geehrte Damen und Herren,"
+  },
+  {
+    "name": "title without honorific falls back ch",
+    "fn": "salutation",
+    "locale": "de-ch",
+    "input": "Dr. Jane Doe",
+    "expected": "Sehr geehrte Damen und Herren"
+  },
+  {
+    "name": "title without honorific falls back de",
+    "fn": "salutation",
+    "locale": "de",
+    "input": "Dr. Jane Doe",
+    "expected": "Sehr geehrte Damen und Herren,"
+  },
+  {
+    "name": "abbreviated herr falls back ch",
+    "fn": "salutation",
+    "locale": "de-ch",
+    "input": "Hr. Müller",
+    "expected": "Sehr geehrte Damen und Herren"
+  },
+  {
+    "name": "abbreviated herr falls back de",
+    "fn": "salutation",
+    "locale": "de",
+    "input": "Hr. Müller",
+    "expected": "Sehr geehrte Damen und Herren,"
+  },
+  {
+    "name": "abbreviated frau falls back ch",
+    "fn": "salutation",
+    "locale": "de-ch",
+    "input": "Fr. Müller",
+    "expected": "Sehr geehrte Damen und Herren"
+  },
+  {
+    "name": "abbreviated frau falls back de",
+    "fn": "salutation",
+    "locale": "de",
+    "input": "Fr. Müller",
+    "expected": "Sehr geehrte Damen und Herren,"
+  },
+  {
+    "name": "title without surname falls back ch",
+    "fn": "salutation",
+    "locale": "de-ch",
+    "input": "Herr Dr.",
+    "expected": "Sehr geehrte Damen und Herren"
+  },
+  {
+    "name": "title without surname falls back de",
+    "fn": "salutation",
+    "locale": "de",
+    "input": "Herr Dr.",
+    "expected": "Sehr geehrte Damen und Herren,"
+  },
+  {
+    "name": "french plain monsieur",
+    "fn": "salutation",
+    "locale": "fr",
+    "input": "Monsieur Dupont",
+    "expected": "Monsieur Dupont,"
+  },
+  {
+    "name": "swiss french plain monsieur",
+    "fn": "salutation",
+    "locale": "fr-ch",
+    "input": "Monsieur Dupont",
+    "expected": "Monsieur Dupont,"
+  },
+  {
+    "name": "french madame abbreviation",
+    "fn": "salutation",
+    "locale": "fr",
+    "input": "Mme Dupont",
+    "expected": "Madame Dupont,"
+  },
+  {
+    "name": "swiss french madame abbreviation",
+    "fn": "salutation",
+    "locale": "fr-ch",
+    "input": "Mme Dupont",
+    "expected": "Madame Dupont,"
+  },
+  {
+    "name": "french titled professor",
+    "fn": "salutation",
+    "locale": "fr",
+    "input": "M. le Professeur Dupont",
+    "expected": "Monsieur le Professeur Dupont,"
+  },
+  {
+    "name": "swiss french titled professor",
+    "fn": "salutation",
+    "locale": "fr-ch",
+    "input": "M. le Professeur Dupont",
+    "expected": "Monsieur le Professeur Dupont,"
+  },
+  {
+    "name": "french doctor kept",
+    "fn": "salutation",
+    "locale": "fr",
+    "input": "Madame le Docteur Dupont",
+    "expected": "Madame le Docteur Dupont,"
+  },
+  {
+    "name": "swiss french doctor kept",
+    "fn": "salutation",
+    "locale": "fr-ch",
+    "input": "Madame le Docteur Dupont",
+    "expected": "Madame le Docteur Dupont,"
+  },
+  {
+    "name": "french no honorific falls back",
+    "fn": "salutation",
+    "locale": "fr",
+    "input": "Jean Dupont",
+    "expected": "Madame, Monsieur,"
+  },
+  {
+    "name": "swiss french no honorific falls back",
+    "fn": "salutation",
+    "locale": "fr-ch",
+    "input": "Jean Dupont",
+    "expected": "Madame, Monsieur,"
+  },
+  {
+    "name": "french empty falls back",
+    "fn": "salutation",
+    "locale": "fr",
+    "input": "",
+    "expected": "Madame, Monsieur,"
+  },
+  {
+    "name": "swiss french empty falls back",
+    "fn": "salutation",
+    "locale": "fr-ch",
+    "input": "",
+    "expected": "Madame, Monsieur,"
+  },
+  {
+    "name": "french via base locale",
+    "fn": "salutation",
+    "locale": "fr-ch",
+    "input": "Madame Dupont",
+    "expected": "Madame Dupont,"
+  },
+  {
+    "name": "italian signor",
+    "fn": "salutation",
+    "locale": "it",
+    "input": "Sig. Rossi",
+    "expected": "Gentile Sig. Rossi,"
+  },
+  {
+    "name": "swiss italian signor",
+    "fn": "salutation",
+    "locale": "it-ch",
+    "input": "Sig. Rossi",
+    "expected": "Gentile Sig. Rossi,"
+  },
+  {
+    "name": "italian signora",
+    "fn": "salutation",
+    "locale": "it",
+    "input": "Sig.ra Rossi",
+    "expected": "Gentile Sig.ra Rossi,"
+  },
+  {
+    "name": "swiss italian signora",
+    "fn": "salutation",
+    "locale": "it-ch",
+    "input": "Sig.ra Rossi",
+    "expected": "Gentile Sig.ra Rossi,"
+  },
+  {
+    "name": "italian titled dottore",
+    "fn": "salutation",
+    "locale": "it",
+    "input": "Sig. Dott. Rossi",
+    "expected": "Gentile Sig. Dott. Rossi,"
+  },
+  {
+    "name": "swiss italian titled dottore",
+    "fn": "salutation",
+    "locale": "it-ch",
+    "input": "Sig. Dott. Rossi",
+    "expected": "Gentile Sig. Dott. Rossi,"
+  },
+  {
+    "name": "italian professor suppresses",
+    "fn": "salutation",
+    "locale": "it",
+    "input": "Sig. Prof. Dott. Rossi",
+    "expected": "Gentile Sig. Prof. Rossi,"
+  },
+  {
+    "name": "swiss italian professor suppresses",
+    "fn": "salutation",
+    "locale": "it-ch",
+    "input": "Sig. Prof. Dott. Rossi",
+    "expected": "Gentile Sig. Prof. Rossi,"
+  },
+  {
+    "name": "italian no honorific falls back",
+    "fn": "salutation",
+    "locale": "it",
+    "input": "Mario Rossi",
+    "expected": "Gentili Signore, Egregi Signori,"
+  },
+  {
+    "name": "swiss italian no honorific falls back",
+    "fn": "salutation",
+    "locale": "it-ch",
+    "input": "Mario Rossi",
+    "expected": "Gentili Signore, Egregi Signori,"
+  },
+  {
+    "name": "italian empty falls back",
+    "fn": "salutation",
+    "locale": "it",
+    "input": "",
+    "expected": "Gentili Signore, Egregi Signori,"
+  },
+  {
+    "name": "swiss italian empty falls back",
+    "fn": "salutation",
+    "locale": "it-ch",
+    "input": "",
+    "expected": "Gentili Signore, Egregi Signori,"
+  },
+  {
+    "name": "romansh signur",
+    "fn": "salutation",
+    "locale": "rm",
+    "input": "signur Schmid",
+    "expected": "Stimà signur Schmid,"
+  },
+  {
+    "name": "romansh signura capitalized",
+    "fn": "salutation",
+    "locale": "rm",
+    "input": "Signura Schmid",
+    "expected": "Stimada signura Schmid,"
+  },
+  {
+    "name": "romansh no honorific falls back",
+    "fn": "salutation",
+    "locale": "rm",
+    "input": "Hans Schmid",
+    "expected": "Stimadas dunnas, stimads signurs,"
+  },
+  {
+    "name": "romansh empty falls back",
+    "fn": "salutation",
+    "locale": "rm",
+    "input": "",
+    "expected": "Stimadas dunnas, stimads signurs,"
+  },
+  {
+    "name": "english mister",
+    "fn": "salutation",
+    "locale": "en",
+    "input": "Mr Smith",
+    "expected": "Dear Mr Smith,"
+  },
+  {
+    "name": "english ms",
+    "fn": "salutation",
+    "locale": "en",
+    "input": "Ms Smith",
+    "expected": "Dear Ms Smith,"
+  },
+  {
+    "name": "english doctor without honorific falls back",
+    "fn": "salutation",
+    "locale": "en",
+    "input": "Dr Smith",
+    "expected": "Dear Sir or Madam,"
+  },
+  {
+    "name": "english professor kept",
+    "fn": "salutation",
+    "locale": "en",
+    "input": "Mr Professor Smith",
+    "expected": "Dear Mr Professor Smith,"
+  },
+  {
+    "name": "english via base locale",
+    "fn": "salutation",
+    "locale": "en-gb",
+    "input": "Mrs Smith",
+    "expected": "Dear Mrs Smith,"
+  },
+  {
+    "name": "unknown locale falls back to english",
+    "fn": "salutation",
+    "locale": "xx",
+    "input": "Jane Doe",
+    "expected": "Dear Sir or Madam,"
+  },
+  {
+    "name": "german austria",
+    "fn": "salutation",
+    "locale": "de-at",
+    "input": "Frau Müller",
+    "expected": "Sehr geehrte Frau Müller,"
+  },
+  {
+    "name": "german liechtenstein",
+    "fn": "salutation",
+    "locale": "de-li",
+    "input": "Frau Müller",
+    "expected": "Sehr geehrte Frau Müller"
+  },
+  {
+    "name": "us unknown recipient keeps hiring manager",
+    "fn": "salutation",
+    "locale": "en-us",
+    "input": "Jane Doe",
+    "expected": "Dear Hiring Manager,"
+  },
+  {
+    "name": "gb unknown recipient",
+    "fn": "salutation",
+    "locale": "en-gb",
+    "input": "Jane Doe",
+    "expected": "Dear Sir or Madam,"
+  },
+  {
+    "name": "us mister",
+    "fn": "salutation",
+    "locale": "en-us",
+    "input": "Mr Smith",
+    "expected": "Dear Mr Smith,"
+  }
+]

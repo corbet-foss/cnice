@@ -1,0 +1,14 @@
+[
+  { "name": "complete name needs no honorific warning", "fn": "honorific_warning", "location": "fixture", "locale": "de", "input": "Frau Müller", "expected": null },
+  { "name": "titled name needs no honorific warning", "fn": "honorific_warning", "location": "fixture", "locale": "de", "input": "Herr Dr. Müller", "expected": null },
+  { "name": "empty name covered by recipient warning", "fn": "honorific_warning", "location": "fixture", "locale": "de", "input": "", "expected": null },
+  { "name": "whitespace name covered by recipient warning", "fn": "honorific_warning", "location": "fixture", "locale": "de", "input": "   ", "expected": null },
+  { "name": "honorific-free german name warns", "fn": "honorific_warning", "location": "fixture", "locale": "de", "input": "Jane Doe", "expected": "fixture: job.cl_recipient.name has no parsable honorific for de; using formal salutation (provide an explicit honorific for tailored opportunities)" },
+  { "name": "empty recipient warns", "fn": "recipient_salutation_warning", "location": "fixture", "input": "", "expected": "fixture: job.cl_recipient.name is empty; using formal salutation (provide a name for tailored opportunities)" },
+  { "name": "named recipient needs no warning", "fn": "recipient_salutation_warning", "location": "fixture", "input": "Dr. Jane Doe", "expected": null },
+  { "name": "whitespace recipient warns", "fn": "recipient_salutation_warning", "location": "fixture", "input": "   ", "expected": "fixture: job.cl_recipient.name is empty; using formal salutation (provide a name for tailored opportunities)" },
+  { "name": "french complete name is clean", "fn": "honorific_warning", "location": "fixture", "locale": "fr", "input": "Monsieur Dupont", "expected": null },
+  { "name": "french honorific-free warns", "fn": "honorific_warning", "location": "fixture", "locale": "fr", "input": "Jean Dupont", "expected": "fixture: job.cl_recipient.name has no parsable honorific for fr; using formal salutation (provide an explicit honorific for tailored opportunities)" },
+  { "name": "romansh complete name is clean", "fn": "honorific_warning", "location": "fixture", "locale": "rm", "input": "signur Schmid", "expected": null },
+  { "name": "italian honorific-free warns", "fn": "honorific_warning", "location": "fixture", "locale": "it", "input": "Mario Rossi", "expected": "fixture: job.cl_recipient.name has no parsable honorific for it; using formal salutation (provide an explicit honorific for tailored opportunities)" }
+]

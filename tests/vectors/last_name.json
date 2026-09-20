@@ -1,0 +1,11 @@
+[
+  { "name": "title plus surname", "fn": "salutation_last_name", "input": "Dr. Jane Doe", "expected": "Doe" },
+  { "name": "honorific abbreviation plus surname", "fn": "salutation_last_name", "input": "Ms Test Person", "expected": "Person" },
+  { "name": "single token", "fn": "salutation_last_name", "input": "Madonna", "expected": "Madonna" },
+  { "name": "hyphenated tokens", "fn": "salutation_last_name", "input": "Anne-Marie Müller-Schmidt", "expected": "Müller-Schmidt" },
+  { "name": "extra whitespace", "fn": "salutation_last_name", "input": "  Jane   Doe  ", "expected": "Doe" },
+  { "name": "tab separator", "fn": "salutation_last_name", "input": "Jane\tDoe", "expected": "Doe" },
+  { "name": "empty", "fn": "salutation_last_name", "input": "", "expected": "" },
+  { "name": "whitespace only", "fn": "salutation_last_name", "input": "   ", "expected": "" },
+  { "name": "mixed whitespace only", "fn": "salutation_last_name", "input": "\t\n ", "expected": "" }
+]
