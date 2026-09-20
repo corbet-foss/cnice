@@ -10,7 +10,7 @@ import sys
 import tarfile
 import tempfile
 
-REPOSITORY = "corbet-labs/cnice"
+REPOSITORY = "corbet-foss/cnice"
 LIMIT = 128 * 1024 * 1024
 
 

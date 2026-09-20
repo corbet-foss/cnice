@@ -10,7 +10,7 @@ for availability; a source manifest alone does not establish publication. `cnice
 
 Use Cargo for Rust and npm, pnpm, Yarn, or Bun for JavaScript. These JavaScript
 package managers share the npm registry; each consumes the same package.
-Deno can use `npm:@corbet-labs/cnice`. The browser export bundles runtime
+Deno can use `npm:@corbet-foss/cnice`. The browser export bundles runtime
 dependencies and needs no import map. The declared Rust minimum is 1.94. Release checks use the worker's current stable compiler; a separate minimum-version check is required to
 verify that lower bound.
 
@@ -53,10 +53,10 @@ Verified wheels and source distributions are also attached to the
 ## JSR
 
 Version 0.2.1 is published as
-[`@corbet-labs/cnice`](https://jsr.io/@corbet-labs/cnice@0.1.0):
+[`@corbet-foss/cnice`](https://jsr.io/@corbet-foss/cnice@0.1.0):
 
 ```sh
-deno add jsr:@corbet-labs/cnice@0.1.0
+deno add jsr:@corbet-foss/cnice@0.1.0
 ```
 
 ## Typst

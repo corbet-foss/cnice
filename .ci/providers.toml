@@ -1,7 +1,7 @@
 schema = 1
 
 [github]
-repository = "corbet-labs/cnice"
+repository = "corbet-foss/cnice"
 workflow = "ccid.yml"
 workflow_sha256 = "40b9758c99e9d126a5eec6dd8b93ecb711b254c3467f2eb245a5d81aafa69591"
 checks = ["rust"]

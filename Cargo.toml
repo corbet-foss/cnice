@@ -5,7 +5,7 @@ edition = "2024"
 rust-version = "1.94"
 description = "Formulaic correspondence phrases: German salutations and locale-specific valedictions (cnice.greet + cnice.farewell)"
 license = "LGPL-3.0-only WITH LGPL-3.0-linking-exception"
-repository = "https://github.com/corbet-labs/cnice"
+repository = "https://github.com/corbet-foss/cnice"
 
 documentation = "https://docs.rs/cnice"
 keywords = ["i18n", "correspondence", "locale"]
