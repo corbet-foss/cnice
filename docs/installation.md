@@ -52,7 +52,7 @@ Verified wheels and source distributions are also attached to the
 
 ## JSR
 
-Version 0.2.1 is published as
+Version 0.1.0 is published as
 [`@corbet-foss/cnice`](https://jsr.io/@corbet-foss/cnice@0.1.0):
 
 ```sh

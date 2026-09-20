@@ -123,8 +123,7 @@ wins.
 
 Behavior is defined by [the locale tables](https://github.com/corbet-foss/cnice/tree/main/tables)
 and [shared conformance vectors](https://github.com/corbet-foss/cnice/tree/main/tests/vectors).
-Rust, JavaScript, Python, and Typst run the same vectors (74 greet + 57
-farewell = 131). Selected CI checks exercise
+Rust, JavaScript, Python, and Typst run the same 189 vectors. Selected CI checks exercise
 installed JavaScript tarballs, Python wheels and command-line entrypoints, and
 Typst packages. Release validation records the actual runtime and platform;
 Linux results do not establish native Windows or macOS coverage.
