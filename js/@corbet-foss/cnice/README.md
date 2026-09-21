@@ -115,9 +115,9 @@ wins.
 | [cnice](https://github.com/corbet-foss/cnice) | Formulaic salutations and valedictions (this repo: `cnice.greet` + `cnice.farewell`) |
 | [cdate](https://github.com/corbet-foss/cdate) | Calendar-date formatting |
 | [cink](https://github.com/corbet-foss/cink) | Handwritten signature images |
-| [cgrade](https://github.com/corbet-labs/cgrade) | Planned correspondence helper |
-| [cnumber](https://github.com/corbet-labs/cnumber) | Number formatting with Swiss amtlich mode |
-| [cbcp](https://github.com/corbet-labs/cbcp) | Planned correspondence helper |
+| [cgrade](https://github.com/corbet-foss/cgrade) | Planned correspondence helper |
+| [cnumber](https://github.com/corbet-foss/cnumber) | Number formatting with Swiss amtlich mode |
+| [cbcp](https://github.com/corbet-foss/cbcp) | Planned correspondence helper |
 
 ## Development
 

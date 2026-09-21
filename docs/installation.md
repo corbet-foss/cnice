@@ -48,7 +48,7 @@ For an isolated CLI environment, use `pipx install cnice==0.1.0` or
 The wheel contains no native extensions and is platform independent. Release
 evidence records the Python version and operating system actually exercised.
 Verified wheels and source distributions are also attached to the
-[GitHub release](https://github.com/corbet-labs/cnice/releases/tag/v0.1.0).
+[GitHub release](https://github.com/corbet-foss/cnice/releases/tag/v0.1.0).
 
 ## JSR
 
