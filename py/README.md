@@ -24,7 +24,7 @@ farewell.closing('de-ch');
 
 ## Install
 
-Version 0.1.1 is published to registries.
+Version 0.1.2 is published to registries.
 
 | Environment | Command |
 | --- | --- |
@@ -36,7 +36,7 @@ Version 0.1.1 is published to registries.
 | Yarn | `yarn add @corbet-labs/cnice` |
 | Bun | `bun add @corbet-labs/cnice` |
 | Deno | `deno add npm:@corbet-labs/cnice` |
-| Typst | `#import "@preview/cnice:0.1.1": *` |
+| Typst | `#import "@preview/cnice:0.1.2": *` |
 
 The JavaScript distribution includes compiled ESM, CommonJS,
 TypeScript declarations, and a standalone browser module. Node.js 20+ is
@@ -49,7 +49,7 @@ const { greet, farewell } = require('@corbet-labs/cnice');
 
 ```html
 <script type="module">
-  import { greet } from 'https://cdn.jsdelivr.net/npm/@corbet-labs/cnice@0.1.1/dist/browser.js';
+  import { greet } from 'https://cdn.jsdelivr.net/npm/@corbet-labs/cnice@0.1.2/dist/browser.js';
   console.log(greet.salutation('de-ch', 'Frau Dr. Müller'));
 </script>
 ```
@@ -134,7 +134,7 @@ for generation, verification, and publication commands.
 
 ## License
 
-Copyright 2026 Julian Y. Richard Corbet. The 0.1.1 release line is licensed
+Copyright 2026 Julian Y. Richard Corbet. The 0.1.2 release line is licensed
 under [LGPL-3.0-only](https://github.com/corbet-foss/cnice/blob/main/LICENSES/LGPL-3.0-only.txt)
 [WITH LGPL-3.0-linking-exception](https://github.com/corbet-foss/cnice/blob/main/LICENSES/LGPL-3.0-only%20WITH%20LGPL-3.0-linking-exception.txt),
 with the incorporated [GPL version 3](https://github.com/corbet-foss/cnice/blob/main/LICENSES/GPL-3.0-only.txt).

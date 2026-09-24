@@ -3,6 +3,12 @@
 All notable changes to `cnice` are documented here. The project follows
 Semantic Versioning.
 
+## 0.1.2 - 2026-09-24
+
+- Drop the duplicate `LICENSES/LGPL-3.0-only WITH LGPL-3.0-linking-exception.txt`
+  (identical to `LGPL-3.0-linking-exception.txt`); JSR rejects paths with spaces.
+- 0.1.1 reached crates.io only; npm, JSR and PyPI go from 0.1.0 to 0.1.2.
+
 ## 0.1.1 - 2026-09-24
 
 - Repository moved to github.com/corbet-foss/cnice; registry metadata points there.
