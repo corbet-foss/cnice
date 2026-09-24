@@ -3,8 +3,10 @@
 All notable changes to `cnice` are documented here. The project follows
 Semantic Versioning.
 
-## Unreleased
+## 0.1.1 - 2026-09-24
 
+- Repository moved to github.com/corbet-foss/cnice; registry metadata points there.
+- Released from a single tag through CI (crates.io and JSR trusted publishing).
 - Add explicit Swiss French (`fr-ch`) and Swiss Italian (`it-ch`)
   salutation rows (same norms as `fr`/`it`); vectors pin both locales.
 
