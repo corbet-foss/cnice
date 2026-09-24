@@ -1,5 +1,5 @@
 {
-  "name": "@corbet-foss/cnice",
+  "name": "@corbet-labs/cnice",
   "version": "0.1.0",
   "exports": "./src/index.ts",
   "license": "LGPL-3.0-only",

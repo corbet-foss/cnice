@@ -1,5 +1,5 @@
 {
-  "name": "@corbet-foss/cnice",
+  "name": "@corbet-labs/cnice",
   "version": "0.1.0",
   "description": "Formulaic correspondence phrases: German salutations and locale-specific valedictions (cnice.greet + cnice.farewell). No models, no I/O: same input always yields the same output. Mirrors the cnice Rust crate release line.",
   "license": "LGPL-3.0-only WITH LGPL-3.0-linking-exception",
@@ -10,7 +10,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/corbet-foss/cnice.git",
-    "directory": "js/@corbet-foss/cnice"
+    "directory": "js/@corbet-labs/cnice"
   },
   "type": "module",
   "main": "./dist/index.cjs",
