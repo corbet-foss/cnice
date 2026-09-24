@@ -3,12 +3,12 @@ schema = 1
 [github]
 repository = "corbet-foss/cnice"
 workflow = "ccid.yml"
-workflow_sha256 = "b07906f86bfb5c1db7aeac4409a446d400c81db37b1baae5473374c9bc603963"
+workflow_sha256 = "1d45b7ced720475e519fa775b8360cee9e26df245c558b19807d7b04b9123400"
 checks = ["rust"]
 platform = "linux-x86_64"
 secret_free = true
 free_eligible = true
-tool_revision = "1b955e0f9ba593174c343cdccef826f5cd91cb9d"
+tool_revision = "27c248aefa3c7198be6716a884d290c717774b21"
 tool_bootstrap_workflow = "bootstrap.yml"
 tool_bootstrap_sha256 = "d275261db8126e8d579184024a9eb4eaeedb15fcb7801804697d396c48e391ae"
 

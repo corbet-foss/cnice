@@ -41,7 +41,7 @@ The checked-in `.ci/publish.py` adapter uses the exact shared publisher resource
 from the release workflow's verified ccid archive. It imports existing source
 archives, preparation receipts and tested packages into one reviewed bundle;
 producer identities remain distinct from later CI/publisher commits. See the
-[shared import and publication contract](https://github.com/corbet-libs/ccid/blob/1b955e0f9ba593174c343cdccef826f5cd91cb9d/adapters/registry-publish.md).
+[shared import and publication contract](https://github.com/corbet-libs/ccid/blob/27c248aefa3c7198be6716a884d290c717774b21/adapters/registry-publish.md).
 
 A pushed `vX.Y.Z` tag runs `.github/workflows/release.yml` (see
 [releasing](../docs/releasing.md)). `prepare` calls `ci.yml` without credentials;

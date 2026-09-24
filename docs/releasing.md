@@ -18,7 +18,7 @@ version for corrections.
      Each package is built once and exported with its receipt and `hosted-run.json`.
    - `bundle` (`contents: write`) requires tag == `v` + version, recreates the
      exact source archive, imports those packages for Cargo, npm, JSR and PyPI
-     with `.ci/publish.py bundle` (the [shared import contract](https://github.com/corbet-libs/ccid/blob/1b955e0f9ba593174c343cdccef826f5cd91cb9d/adapters/registry-publish.md)),
+     with `.ci/publish.py bundle` (the [shared import contract](https://github.com/corbet-libs/ccid/blob/27c248aefa3c7198be6716a884d290c717774b21/adapters/registry-publish.md)),
      inspects it offline, and creates the GitHub release with
      `publication-bundle.tar`, its `.sha256` and the import receipt `publication-bundle.json`.
    - `publish` (`contents: write`, `id-token: write`) downloads that release
@@ -56,7 +56,7 @@ repository (for the publication journals), and `NPM_TOKEN` or `PYPI_TOKEN` for
 the selected registry:
 
 ```sh
-tag=vX.Y.Z repo=corbet-foss/cnice rev=1b955e0f9ba593174c343cdccef826f5cd91cb9d
+tag=vX.Y.Z repo=corbet-foss/cnice rev=27c248aefa3c7198be6716a884d290c717774b21
 work=$(mktemp -d) && cd "$work"
 git clone -q --depth 1 --branch "$tag" "https://github.com/$repo" source
 git clone -q https://github.com/corbet-libs/ccid publisher && git -C publisher checkout -q "$rev"

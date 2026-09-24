@@ -26,7 +26,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  CCID_REVISION: 1b955e0f9ba593174c343cdccef826f5cd91cb9d
+  CCID_REVISION: 27c248aefa3c7198be6716a884d290c717774b21
   RELEASE_TAG: ${{ github.event_name == 'push' && github.ref_name || inputs.tag }}
 
 jobs:
