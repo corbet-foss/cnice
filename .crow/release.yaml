@@ -35,7 +35,7 @@ steps:
   - name: validate-release-selection
     image: bash
     environment: &publisher-environment
-      CCID_REVISION: '33600b394910c643c5a6af6dff479fb16418428a'
+      CCID_REVISION: '1b955e0f9ba593174c343cdccef826f5cd91cb9d'
     commands:
       - |
         set -eu
